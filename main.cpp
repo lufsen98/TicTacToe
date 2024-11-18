@@ -12,7 +12,11 @@ int main(){
     Game game1;
 
     while(gameRunning){
+        
         game1.displayBoard();
+       
+
+        
         gameRunning = false;
         
     }

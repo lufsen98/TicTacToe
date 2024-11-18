@@ -5,11 +5,9 @@ class Game{
     private:
     public: 
 
-    // check
     std::vector <std::vector <std::string>>board {{" "," "," "},
                                                   {" "," "," "},
                                                   {" "," "," "}};
-
 
     void displayBoard();
 
