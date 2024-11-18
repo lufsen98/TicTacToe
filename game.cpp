@@ -39,3 +39,16 @@ bool Game::checkWin(){
 
     return false;
 }
+
+bool Game::checkDraw()
+{
+    for (auto& row: this->board) {
+        for (auto& cell : row) {
+            if (cell == " ") {
+                return false;
+            }
+        }
+    }
+
+    return true;
+}
