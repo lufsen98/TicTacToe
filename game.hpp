@@ -3,14 +3,13 @@
 
 class Game{
     private:
-    std::vector <std::vector <std::string> > board {{" "," "," "},
-                                                    {" "," "," "},
-                                                    {" "," "," "}};
     public: 
+    std::vector <std::vector <std::string>>board {{" "," "," "},
+                                                  {" "," "," "},
+                                                  {" "," "," "}};
 
 
     void displayBoard();
-
     bool checkWin();
 
     bool checkDraw();
