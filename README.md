@@ -1,9 +1,7 @@
-**TicTacToe**
+#TicTacToe
 
-
-class game
-
-
-
-Class player
-
+usage:
+```
+g++ main.cpp game.cpp player.cpp
+./a.out
+```
