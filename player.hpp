@@ -2,20 +2,11 @@
 
 class Player{
     private:
-    std::string playerType;
-    int rounds = 0;
+        std::string playerType;
+        int rounds = 0;
     public:
-    Player(std::string newPlayerType);
-
-    std::string getPlayerType();
-
-    std::string choice();
-
-    int getRounds(){return this->rounds;}
-
-    
-
-    
-
-
+        Player(std::string newPlayerType);
+        std::string choice();
+        int getRounds();
+        int getMove();
 };
