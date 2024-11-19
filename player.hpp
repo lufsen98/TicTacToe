@@ -7,5 +7,6 @@ class Player{
     public:
         Player(std::string newPlayerType);
         std::string choice();
-        int getRounds(){ return this->rounds; }
+        int getRounds();
+        int getMove();
 };
