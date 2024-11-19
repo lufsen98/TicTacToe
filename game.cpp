@@ -1,8 +1,9 @@
 #include "game.hpp"
 #include <iostream>
-
+#include <stdlib.h>
 
 void Game::displayBoard(){
+    std::system("clear");
     for(auto& row : this->board) {
         for(auto&cell : row){
             std::cout << cell;
