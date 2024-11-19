@@ -10,4 +10,7 @@ g++ main.cpp game.cpp player.cpp
 update branches locally:
 ```
 git remote update
+
+# view the remote branches
+git branch -r
 ```
