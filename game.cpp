@@ -74,8 +74,4 @@ void Game::setMark(std::string playertype, int markInput) {
     }
 
     this->board[row][cell] = playertype;
-
-
-
-
 }
