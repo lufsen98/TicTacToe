@@ -7,6 +7,8 @@ class Player{
     public:
     Player(std::string newPlayerType);
 
+    std::string getPlayerType();
+
     std::string choice();
 
     int getRounds(){return this->rounds;}

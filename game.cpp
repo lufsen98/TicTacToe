@@ -52,3 +52,29 @@ bool Game::checkDraw()
 
     return true;
 }
+
+
+void Game::setMark(std::string playertype, int markInput) { 
+    int row;
+    int cell;
+
+    if( markInput < 3) {
+        cell = markInput -1;
+        row = 0;
+    }
+    else if (markInput < 6) {
+        cell = (markInput % 3) -1; 
+        row = 1;
+    }
+    else {
+        cell = (markInput % 6) -1;
+        row = 2;
+
+    }
+
+    this->board[row][cell] = playertype;
+
+
+
+
+}

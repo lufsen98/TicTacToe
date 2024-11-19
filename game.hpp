@@ -14,6 +14,8 @@ class Game{
     bool checkWin();
 
     bool checkDraw();
+    
+    void setMark(std::string playertype, int markplace);
 
 
 };
