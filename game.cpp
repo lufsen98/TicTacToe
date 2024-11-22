@@ -15,7 +15,7 @@ void Game::displayBoard(){
 
 bool Game::checkWin(std::string playertype) {
 
-    for (auto i = 0; i< this->board.size();i++) {
+    for (size_t i = 0; i< this->board.size();i++) {
         if ((board[i][0] == playertype  &&
              board[i][0] == board[i][1] &&
              board[i][1] == board[i][2])||
