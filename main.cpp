@@ -7,24 +7,18 @@ int main(){
 
     std::cout << "Welcome to Tic-Tac-Toe!\n";
 
-
-
     Game game1;
+    game1.displayBoard();
 
     Player player1("X");
     Player player2("O");
 
     while(gameRunning){
-        game1.displayBoard();
-    
-        // get first playermove
-    
         game1.setMark(player1.getPlayerType(), player1.getMove());
         game1.displayBoard();
-        // get second player move
      
         if(game1.checkWin(player1.getPlayerType())) {
-            std::cout << player1.getPlayerType() << " won\n";
+            std::cout << player1.getPlayerType() << " Won\n";
             gameRunning = false;
         }
 
@@ -35,15 +29,12 @@ int main(){
             std::cout << player2.getPlayerType() << " Won\n";
             gameRunning = false;
         }
+
         if(game1.checkDraw()) {
             std::cout << "It's a draw!\n";
             gameRunning = false;
         }
-        
-    
-        // draw?
-        // display score?
-    
-    
     }
+
+    return 0;
 }
