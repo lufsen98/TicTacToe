@@ -65,11 +65,11 @@ void Game::setMark(std::string playertype, int markInput) {
         row = 0;
     }
     else if (markInput <= 6) {
-        cell = (markInput % 3) -1; 
+        cell = (markInput -1) % 3 ; 
         row = 1;
     }
     else {
-        cell = (markInput % 6) -1;
+        cell = (markInput -1) % 6 ;
         row = 2;
 
     }

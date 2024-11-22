@@ -18,25 +18,28 @@ int main(){
         game1.displayBoard();
     
         // get first playermove
+    
         game1.setMark(player1.getPlayerType(), player1.getMove());
         game1.displayBoard();
         // get second player move
+     
+        if(game1.checkWin(player1.getPlayerType())) {
+            std::cout << player1.getPlayerType() << " won\n";
+            gameRunning = false;
+        }
+
         game1.setMark(player2.getPlayerType(), player2.getMove());
         game1.displayBoard();
 
+        if(game1.checkWin(player2.getPlayerType())) {
+            std::cout << player2.getPlayerType() << " Won\n";
+            gameRunning = false;
+        }
         if(game1.checkDraw()) {
             std::cout << "It's a draw!\n";
             gameRunning = false;
         }
-        else if(game1.checkWin(player1.getPlayerType())) {
-            std::cout << player1.getPlayerType() << "won\n";
-            gameRunning = false;
-        }
-        else {
-            game1.checkWin(player2.getPlayerType());
-            std::cout << player2.getPlayerType() << "Won\n";
-             gameRunning = false;
-        }
+        
     
         // draw?
         // display score?
