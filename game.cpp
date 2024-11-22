@@ -73,7 +73,7 @@ bool Game::setMark(std::string playertype, int markInput) {
 
     }
 
-    if (this->board[row][cell] != " ") {
+    if (this->board[row][cell] == " ") {
         this->board[row][cell] = playertype;
         return true;
     } else {
