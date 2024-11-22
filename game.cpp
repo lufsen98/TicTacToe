@@ -55,7 +55,7 @@ bool Game::checkDraw()
 }
 
 
-void Game::setMark(std::string playertype, int markInput) { 
+bool Game::setMark(std::string playertype, int markInput) { 
     int row;
     int cell;
 
@@ -73,5 +73,10 @@ void Game::setMark(std::string playertype, int markInput) {
 
     }
 
-    this->board[row][cell] = playertype;
+    if (this->board[row][cell] == " ") {
+        this->board[row][cell] = playertype;
+        return true;
+    } else {
+        return false;
+    }
 }
